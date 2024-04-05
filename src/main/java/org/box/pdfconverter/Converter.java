@@ -18,8 +18,8 @@ import java.util.Collection;
 
 public class Converter {
 
-    public static void pdfToImage(String pathname) throws IOException {
-        File pdfFile = new File(pathname);
+    public static void pdfToImage(String pathToPdf) throws IOException {
+        File pdfFile = new File(pathToPdf);
         int threshold = 170;
         try (PDDocument document = Loader.loadPDF(pdfFile)) {
             System.out.printf("Success. Document has %d pages.", document.getNumberOfPages());
