@@ -62,7 +62,7 @@ public class Converter {
             contentStream.drawImage( imgObj, 0, 0 );
             contentStream.close();
         }
-        document.save("src/main/resources/testgray.pdf");
+        document.save("src/main/resources/testbw.pdf");
         document.close();
     }
 
